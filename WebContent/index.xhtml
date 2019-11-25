@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+	<title>Projeto Livraria</title>
+	<link rel="stylesheet" type="text/css" href="styles/index.css"/>
+</h:head>
+
+<h:body>
+<h:graphicImage value="assets/img/books.jpg"/>
+	
+<h3>Livraria Leitura</h3>
+			
+<h:form> 
+	<div class="main_button">
+		<center>
+		<h:commandButton action="listarLivros" value="Listar Livros"/>
+		<h:commandButton action="cadastrarLivro" value="Cadastrar novo livro"/>
+		</center>
+	</div> 
+</h:form>
+	
+<footer> <h4>APS - Desenvolvimento Web</h4> </footer>
+</h:body>
+
+</html>
