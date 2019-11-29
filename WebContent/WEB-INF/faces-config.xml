@@ -5,12 +5,13 @@
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_3.xsd"
     version="2.3">
 
-<<<<<<< HEAD
 	<managed-bean>
 	   <managed-bean-name>livroBean</managed-bean-name>
 	   <managed-bean-class>LivroBean</managed-bean-class>
 	   <managed-bean-scope>request</managed-bean-scope>
+	   
+	   <managed-bean-name>clienteBean</managed-bean-name>
+	   <managed-bean-class>ClienteBean</managed-bean-class>
+	   <managed-bean-scope>request</managed-bean-scope>
 	</managed-bean>
-=======
->>>>>>> 4620c22c072e4e4707f82fe8308391a1b760c82b
 </faces-config>

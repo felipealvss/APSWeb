@@ -4,42 +4,32 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
-<<<<<<< HEAD
 	xmlns:f="http://xmlns.jcp.org/jsf/core"
 	xmlns:composite="http://java.sun.com/jsf/composite">
-=======
-	xmlns:f="http://xmlns.jcp.org/jsf/core">
->>>>>>> 4620c22c072e4e4707f82fe8308391a1b760c82b
 
 <head>
 	<title>Projeto Livraria</title>
 </head>
 
 <h:body>
-<<<<<<< HEAD
 	<h:form>
 	  <h:outputLabel value="Id:"></h:outputLabel>
-	  <h:inputText id="ident" value="#{LivroBean.Id}" p:placeholder="Identificador"/>
+	  <h:inputText id="ident" value="#{LivroBean.Id}" required="true" p:placeholder="Id"/>
 	  <br/>
       <h:outputLabel value="Nome:"></h:outputLabel>
-	  <h:inputText id="nome" value="#{LivroBean.Nome}" p:placeholder="Nome"/>
+	  <h:inputText id="nome" value="#{LivroBean.Nome}" required="true" p:placeholder="Nome"/>
 	  <br/>
       <h:outputLabel value="Editora:"></h:outputLabel>
-	  <h:inputSecret id="senha" value="#{LivroBean.Editora}" p:placeholder="Editora"/>
+	  <h:inputSecret id="senha" value="#{LivroBean.Editora}" required="true" p:placeholder="Editora"/>
 	  <br/>
 	  <h:outputLabel value="Ano:"></h:outputLabel>
-	  <h:inputSecret id="ano" value="#{LivroBean.Ano}" p:placeholder="Ano"/>
+	  <h:inputSecret id="ano" value="#{LivroBean.Ano}" required="true" p:placeholder="Ano"/>
 	  <br/>
       <h:outputLabel value="Descrição:"></h:outputLabel> 
 	  <h:inputTextarea id="desc" value="#{LivroBean.Descricao}" p:placeholder="Descrição"/>
 	  <br/>
             
-      <h:commandButton value="Cadastrar" action="CadastroLivro"/>
+      <h:commandButton value="Cadastrar" action="CadastroLivro" update="messages"/>
 	</h:form>
-=======
-	<:form>
-
-	</:form>
->>>>>>> 4620c22c072e4e4707f82fe8308391a1b760c82b
 </h:body>
 </html>

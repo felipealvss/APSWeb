@@ -12,20 +12,10 @@
 </head>
 
 <h:body>
-<h:graphicImage value="assets/img/books.jpg"/>
-	
-<h3>Livraria Leitura</h3>
-			
-<h:form> 
-	<div class="main_button">
-	  <center>
-		<h:commandButton action="cadastrarLivro" value="Cadastrar novo livro"/>
-		<h:commandButton action="cadastrarCliente" value="Cadastrar Cliente"/>
-	  </center>
-	</div> 
-</h:form>
-	
-<footer> <h4>APS - Desenvolvimento Web</h4> </footer>
+  <h:outputText value="Id: #{clienteBean.id}"/>
+  <h:outputText value="Nome: #{clienteBean.nome}"/>
+  <h:outputText value="Idade: #{clienteBean.idade}"/>
+  <h:outputText value="Contato: #{clienteBean.contato}"/>
+  <h:outputText value="Email: #{clienteBean.email}"/>
 </h:body>
-
 </html>
