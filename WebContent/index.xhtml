@@ -17,12 +17,46 @@
 <h3>Livraria Leitura</h3>
 			
 <h:form> 
-	<div class="main_button">
-	  <center>
-		<h:commandButton action="cadastrarLivro" value="Cadastrar novo livro"/>
-		<h:commandButton action="cadastrarCliente" value="Cadastrar Cliente"/>
-	  </center>
-	</div> 
+	<center>
+	   <h:outputText value="Lista de Clientes:" />
+	</center>
+	
+	<h:dataTable binding="#{table}" value="#{clienteBean.clienteList()}" var="c" class="table striped table-hover table-bordered">
+	   
+	   <h:column>
+	      <f:facet name="header">ID</f:facet>
+	      <h:outputText value="#{c.id}"/>
+	   </h:column>
+	   <h:column>
+	      <f:facet name="header">Nome</f:facet>
+	      <h:outputText value="#{c.nome}"/>
+	   </h:column>
+	   <h:column>
+	      <f:facet name="header">Idade</f:facet>
+	      <h:outputText value="#{c.idade}"/>
+	   </h:column>
+	   <h:column>
+	      <f:facet name="header">Contato</f:facet>
+	      <h:outputText value="#{c.contato}"/>
+	   </h:column>
+	   <h:column>
+	      <f:facet name="header">E-mail</f:facet>
+	      <h:outputText value="#{c.email}"/>
+	   </h:column>
+	   
+	   <h:column>
+	      <f:facet name="header">Atualizar</f:facet>
+	      <h:commandButton action="#{ClienteBean.Edit(c.id)}" value="Alterar" class="btn btn-primary">	         
+	      </h:commandButton>
+	   </h:column>
+	   
+	</h:dataTable>
+	
+	<center>
+	   <h:commandButton action="#{ClienteBean.Delete(c.id)}" value="Deletar" class="btn btn-danger">
+	   </h:commandButton>
+	</center>
+	
 </h:form>
 	
 <footer> <h4>APS - Desenvolvimento Web</h4> </footer>
